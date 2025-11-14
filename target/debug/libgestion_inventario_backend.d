@@ -1,0 +1,1 @@
+D:\Joaquin\Otros\Proyectos\ Personales\Proyecto_portafolio\ (EN\ CURSO)\automatizIA\gestion-inventario\backend\target\debug\libgestion_inventario_backend.rlib: D:\Joaquin\Otros\Proyectos\ Personales\Proyecto_portafolio\ (EN\ CURSO)\automatizIA\gestion-inventario\backend\src\lib.rs

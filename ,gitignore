@@ -1,0 +1,32 @@
+# === Rust / Cargo ===
+target/
+**/*.rs.bk
+Cargo.lock
+
+# Si prefieres incluir Cargo.lock para reproducibilidad, comenta la línea:
+# Cargo.lock
+
+# === IntelliJ / VSCode ===
+.idea/
+.vscode/
+*.iml
+
+# === Logs ===
+*.log
+
+# === Rust Tools ===
+.rustc_info.json
+rustfmt.toml
+
+# === Environment variables ===
+.env
+.env.*
+!.env.example
+
+# === Docker ===
+/backend/tmp/
+docker-compose.override.yml
+
+# === OS general ===
+.DS_Store
+Thumbs.db
