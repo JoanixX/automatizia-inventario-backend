@@ -2,6 +2,7 @@
 name = "gestion_inventario_backend"
 version = "0.1.0"
 edition = "2021"
+default-run = "gestion_inventario_backend"
 
 [dependencies]
 axum = "0.7"
@@ -9,6 +10,14 @@ tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 tracing = "0.1"
-tracing-subscriber = "0.3"
-sqlx = { version = "0.7", features = ["postgres", "runtime-tokio-native-tls", "macros", "migrate"] }
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+sqlx = { version = "0.7", features = ["postgres", "runtime-tokio-rustls", "macros", "migrate", "chrono", "uuid"] }
 dotenvy = "0.15"
+bcrypt = "0.15"
+jsonwebtoken = "9"
+chrono = { version = "0.4", features = ["serde"] }
+rand = "0.8"
+anyhow = "1.0"
+thiserror = "1.0"
+tower-http = { version = "0.5.2", features = ["cors", "trace"] }
+uuid = { version = "1", features = ["v4", "serde"] }
